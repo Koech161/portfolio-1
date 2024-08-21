@@ -82,6 +82,10 @@
     transform: scale(1.05);
     background: rgb(223, 10, 10);
 }
+.resume button a{
+    text-decoration: none;
+    color: #fff;
+}
 .skill{
   
     gap: 30px;

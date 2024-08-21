@@ -47,13 +47,13 @@ color: blue;
         width: 100%;
     }
     .nav-item{
-        margin: 0 7px;
+        margin: 0 5px;
     }
     .nav-link{
         font-size: 14px;
-        gap: 5px;
+        gap: 1px;
     }
     .nav-link svg{
-        margin-right: 4px;
+        width: 0;
     }
 }

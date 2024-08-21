@@ -41,7 +41,7 @@ color: blue;
 .nav-link svg{
     margin-right: 8px;
 }
-@media (max-width: 800px){
+@media only screen and (min-width: 400px) and (max-width:768px){
     .header{
         gap: 4px;
         width: 100%;
@@ -50,7 +50,7 @@ color: blue;
         margin: 0 7px;
     }
     .nav-link{
-        font-size: 15px;
+        font-size: 14px;
         gap: 5px;
     }
     .nav-link svg{

@@ -1,10 +1,10 @@
 import React from 'react'
 import '../style/Projects.css'
-import { FaBootstrap,  FaBug,  FaCode,  FaCss3Alt, FaDatabase, FaGit, FaHtml5, FaJs, FaMobileAlt, FaProjectDiagram, FaQuestionCircle, FaReact, FaTerminal } from 'react-icons/fa';
+import { FaBootstrap,  FaBug,  FaCode,  FaCss3Alt, FaDatabase, FaGit, FaHtml5, FaJs, FaLinux, FaMobileAlt, FaProjectDiagram, FaQuestionCircle, FaReact, FaTerminal } from 'react-icons/fa';
 const Skills = () => {
     const skills =['HTML 5', 'CSS 3','JavaScript','React', 'Bootstrap','Projects Managements',
         'Responsive Design', 'Version control', 'Performance Optimization','API Integration',
-        'State Management', 'Build Tools', 'Testing'
+        'State Management', 'Build Tools', 'Testing','Linux OS'
     ]
     const skillIcons = {
         'HTML 5': <FaHtml5 size={24} color="#E44D26"/>,
@@ -19,7 +19,8 @@ const Skills = () => {
         'API Integration': <FaDatabase size={24}  color="#003A70"/>,
         'State Management': <FaProjectDiagram  size={24} color="#007BFF"/>,
         'Testing':<FaBug size={24} color="#D73A4A" />,
-        'Build Tools':<FaTerminal size={24} color="#00A82D"/>
+        'Build Tools':<FaTerminal size={24} color="#00A82D"/>,
+        'Linux OS': <FaLinux size={24} color='#000000'/>
 
       };
   return (

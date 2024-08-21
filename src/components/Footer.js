@@ -13,10 +13,11 @@ const Footer = () => {
         <div className='footer-item'>
           <FaMapMarkerAlt/>
           <p> Eldoret, Kenya</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Kenya.svg/1200px-Flag_of_Kenya.svg.png" alt="Kenyan Flag" class="kenyan-flag"/>
         </div>
         <div className='footer-item'>
           <FaLinkedin />
-          <p><a href='https://www.linkedin.com/in/yourprofile' target='_blank' rel='noopener noreferrer'>LinkedIn</a></p>
+          <p><a href='https://www.linkedin.com/in/abel-koech-787193280/' target='_blank' rel='noopener noreferrer'>LinkedIn</a></p>
         </div>
         <div className='footer-item'>
           <FaGithub />

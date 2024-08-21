@@ -1,0 +1,24 @@
+.contact{
+    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+}
+.contact-item{
+   
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+.contact-item a{
+    text-decoration: none;
+    color: #000;
+}
+.contact-item a:hover{
+    color: blue;
+}
+.contact-item svg{
+    margin-top: 5px;
+}

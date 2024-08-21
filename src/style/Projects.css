@@ -98,11 +98,11 @@
     transition: transform 0.3s ease infinite;
 }
 .skill-card:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 @media (max-width: 768px){
     .projects h2 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .card{
         padding: 15px;

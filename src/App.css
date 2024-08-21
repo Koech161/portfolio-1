@@ -80,7 +80,7 @@ text-decoration: underline;
   padding: 20px;
   
 }
-@media  only screen and (min-width: 400px) and (max-width: 768px){
+@media  (max-width: 768px){
   
 .des{
   width: 100%;

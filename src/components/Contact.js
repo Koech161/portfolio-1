@@ -2,8 +2,11 @@ import React from 'react'
 import { FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
 import NavBar from './NavBar'
 
+
 const Contact = () => {
   return (
+    <>
+   
     <div className='contact' >
         <NavBar />
         <div className='contact-item'>
@@ -16,6 +19,8 @@ const Contact = () => {
         </div>
       
     </div>
+  
+    </>
   )
 }
 

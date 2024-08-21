@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import '../App.css'
 
+
 const About = () => {
   return (
     <div>
@@ -33,6 +34,7 @@ const About = () => {
      </div>
 
     </div>
+    
     </div>
   )
 }

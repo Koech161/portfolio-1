@@ -3,11 +3,11 @@ import React from 'react'
 import homeimg from '../assets/my_pic.jpg'
 import '../App.css'
 import NavBar from './NavBar'
-import Footer from './Footer'
+
 const Home = () => {
   return (
 
-    <div>
+    <div className='home'>
        <> <NavBar /></>
     <div className='home-container'>
     
@@ -30,7 +30,7 @@ const Home = () => {
           <p>If you have any questions or want to get in touch, please email me at:</p>
           <p><a href='mailto:koechabel161@gmail.com>K</a></p>
         </div> */}
-        <Footer/>
+        
     </div>
   )
 }

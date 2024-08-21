@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import weather from '../assets/weather.jpeg'
 import todo from '../assets/todo_list.jpeg'
 import '../style/Projects.css'
+
 const Projects = () => {
   return (
     <div>
@@ -28,6 +29,7 @@ const Projects = () => {
         </div>
       </div>
       </div>
+    
     </div>
   )
 }

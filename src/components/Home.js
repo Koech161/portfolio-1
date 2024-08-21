@@ -3,6 +3,7 @@ import React from 'react'
 import homeimg from '../assets/my_pic.jpg'
 import '../App.css'
 import NavBar from './NavBar'
+import Footer from './Footer'
 const Home = () => {
   return (
 
@@ -24,6 +25,12 @@ const Home = () => {
     </div>
     
     </div>
+    {/* <div className='contact-info'>
+          <h2>Contact Me</h2>
+          <p>If you have any questions or want to get in touch, please email me at:</p>
+          <p><a href='mailto:koechabel161@gmail.com>K</a></p>
+        </div> */}
+        <Footer/>
     </div>
   )
 }

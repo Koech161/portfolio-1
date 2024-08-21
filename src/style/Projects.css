@@ -11,6 +11,13 @@
     margin-bottom: 20px;
     color: #333;
 }
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -23,6 +30,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     background-color: #fff;
+    transition: transform .3s ease infinite;
+  }
+  .card:hover{
+    transform: scale(1.05);
   }
 .card h3{
     font-size: 2em;

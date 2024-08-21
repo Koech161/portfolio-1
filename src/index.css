@@ -4,6 +4,8 @@
   margin: 0;
 }
 body{
-  background: linear-gradient(to right, #faeefa,#dfd4d4,rgb(233, 191, 199));
+
+  background: linear-gradient(to right, #faeefa,#e0d3d3,rgb(241, 207, 213));
   min-height: 100vh;
+  
 }

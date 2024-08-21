@@ -16,11 +16,11 @@ const Footer = () => {
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Kenya.svg/1200px-Flag_of_Kenya.svg.png" alt="Kenyan Flag" class="kenyan-flag"/>
         </div>
         <div className='footer-item'>
-          <FaLinkedin />
+          <FaLinkedin   size={24} color="#0077B5"/>
           <p><a href='https://www.linkedin.com/in/abel-koech-787193280/' target='_blank' rel='noopener noreferrer'>LinkedIn</a></p>
         </div>
         <div className='footer-item'>
-          <FaGithub />
+          <FaGithub size={24} color="#333"/>
           <p><a href='https://github.com/koech161' target='_blank' rel='noopener noreferrer'>GitHub </a></p>
         </div>
 

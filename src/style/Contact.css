@@ -18,7 +18,9 @@
 }
 .contact-item a:hover{
     color: blue;
+    opacity: 0.8;
 }
-.contact-item svg{
-    margin-top: 5px;
+.contact-item svg:hover{
+  opacity: 0.8;
+  cursor: pointer;
 }

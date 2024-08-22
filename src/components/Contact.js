@@ -5,10 +5,13 @@ import '../style/Contact.css'
 
 const Contact = () => {
   const [error, setError] =useState(null)
+  const [success, setSuccess]= useState(null)
   const [formData, setFormData] =useState({
     email: '',
     message: ''
   })
+const apiKey = process.env.REACT_APP_API_KEY
+// console.log('keys',apiKey);
 
   const handleChange = (e) =>{
     const {name, value}= e.target
@@ -18,14 +21,37 @@ const Contact = () => {
     })
    setError(null)
   }
-  const handleSubmit = (e) =>{
+  const handleSubmit = async (e) =>{
     e.preventDefault()
     const {email ,message} =formData
     if(!email || !message){
       setError('All fields are requiered')
       return
     }
-    console.log(formData);
+    //console.log(formData);
+    const data = {
+      ...formData,
+      access_key: apiKey
+    }
+    // formData.append('access_key', apiKey)
+  try {
+    const res = await fetch("https://api.web3forms.com/submit",{
+      method: 'POST',
+      headers : {
+        'Content-Type': 'application/json',
+        'accept': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+   const result = await res.json()
+    if(result.success){
+      //console.log('success',result);
+      setSuccess('Message submitted succesfully')
+    }
+  } catch (error) {
+    
+  }
+    
     setFormData({ email: '', message: '' })
   }
   return (
@@ -48,13 +74,14 @@ const Contact = () => {
         
         <>
 
-        <form action='' method='POST' className='form' onSubmit={handleSubmit} >
+        <form  className='form' onSubmit={handleSubmit} >
             <label>Email</label>
             <input type='email'  placeholder='enter your email' name='email' value={formData.email} onChange={handleChange}/>
             <label>message</label>
             <textarea name='message' placeholder='enter your message' value={formData.message} onChange={handleChange} />
             {error && <div className='error-message'>{error}</div>}
-            <input type='submit' />
+            {success && <div className='succes-message'>{success}</div>}
+            <button type='submit'>Submit</button>
           </form>
         </>
       

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
+import { FaGithub, FaLinkedin} from 'react-icons/fa'
 import NavBar from './NavBar'
 import '../style/Contact.css'
 

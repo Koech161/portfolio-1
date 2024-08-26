@@ -128,3 +128,24 @@
         padding: 8px 15px;
     }
 }
+@media (max-width:315px){
+    .resume h3{
+        font-size: 14px;
+    }
+    .resume h1{
+        font-size: 16px;
+    }
+    .resume h2{
+        font-size: 16px;
+    }
+    .resume button{
+        font-size: 14px;
+    }
+    .skill .skill-card{
+        font-size: 15px;
+      
+    }
+    .skill{
+        gap: 5px;
+    }
+}

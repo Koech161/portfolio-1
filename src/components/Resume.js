@@ -3,7 +3,7 @@ import NavBar from './NavBar'
 import Skills from './Skills'
 import '../style/Projects.css'
 import {   FaCogs, FaFileDownload } from 'react-icons/fa'
-import resume from '../assets/Resume.pdf'
+import resume from '../assets/abel_koech.pdf'
 
 const Resume = () => {
   return (

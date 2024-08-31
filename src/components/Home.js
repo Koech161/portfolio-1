@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from 'react'
-
 import homeimg from '../assets/my_pic.jpg'
 import '../App.css'
 import NavBar from './NavBar'
@@ -10,10 +8,7 @@ const Home = () => {
 
     <div className='home'>
         <NavBar />
-    <div className='home-container'>
-    
-        
-       
+    <div className='home-container'> 
     <div className='about'>
       <div className='bio '>
       <h2>Hello, I'm</h2>

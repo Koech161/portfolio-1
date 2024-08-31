@@ -4,58 +4,9 @@ import NavBar from './NavBar'
 import '../style/Contact.css'
 
 const Contact = () => {
-//   const [error, setError] =useState(null)
-//   const [success, setSuccess]= useState(null)
-//   const [formData, setFormData] =useState({
-//     email: '',
-//     message: ''
-//   })
-// const apiKey = process.env.REACT_APP_API_KEY
-// // console.log('keys',apiKey);
 
-//   const handleChange = (e) =>{
-//     const {name, value}= e.target
-//     setFormData({
-//       ...formData, 
-//       [name]: value
-//     })
-//    setError(null)
-//   }
-//   const handleSubmit = async (e) =>{
-//     e.preventDefault()
-//     const {email ,message} =formData
-//     if(!email || !message){
-//       setError('All fields are requiered')
-//       return
-//     }
-//     //console.log(formData);
-//     const data = {
-//       ...formData,
-//       access_key: apiKey
-//     }
-//     // formData.append('access_key', apiKey)
-//   try {
-//     const res = await fetch("https://api.web3forms.com/submit",{
-//       method: 'POST',
-//       headers : {
-//         'Content-Type': 'application/json',
-//         'accept': 'application/json'
-//       },
-//       body: JSON.stringify(data)
-//     })
-//    const result = await res.json()
-//     if(result.success){
-//       //console.log('success',result);
-//       setSuccess('Message submitted succesfully')
-//     }
-//   } catch (error) {
-    
-//   }
-    
-//     setFormData({ email: '', message: '' })
-//   }
   return (
-    <>
+    <div className='contact-container'>
     <NavBar />
     <div className='contact' >
        
@@ -78,7 +29,7 @@ const Contact = () => {
       
     </div>
   
-    </>
+    </div>
   )
 }
 

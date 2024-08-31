@@ -12,7 +12,6 @@ function App() {
       <RouterProvider router={routes}/>
       </div>
      
-      
       <Footer/>
     </div>
     

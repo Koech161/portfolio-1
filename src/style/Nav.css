@@ -67,7 +67,7 @@ color: blue;
         gap: 1px;
     }
     .nav-link svg{
-        width: 0;
+        width: 30px;
     }
 }
 @media (max-width:315px){
@@ -100,5 +100,8 @@ color: blue;
     }
     .nav-item{
         margin: 0 3px;
+    }
+    .nav-link svg{
+        width: 0;
     }
 }

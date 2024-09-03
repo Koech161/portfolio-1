@@ -1,6 +1,7 @@
 import homeimg from '../assets/my_pic.jpg'
 import '../App.css'
 import NavBar from './NavBar'
+import About from './About'
 
 const Home = () => {
 
@@ -21,6 +22,7 @@ const Home = () => {
     </div>
     
     </div>
+    <About/>
   
         
     </div>

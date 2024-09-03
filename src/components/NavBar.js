@@ -22,10 +22,10 @@ const NavBar = () => {
             <Link  className="nav-link" to='/'>
            <FaHome/> Home</Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
             <Link  className="nav-link" to='/about'>
          <FaUserAlt/>   About</Link>
-            </li>
+            </li> */}
             <li className="nav-item">
             <Link  className="nav-link" to='/resume'>
            <FaFileAlt/> Resume</Link>

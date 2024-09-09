@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.jpeg'
 import '../style/Nav.css'
-import {   FaEnvelope, FaFileAlt, FaHome, FaUserAlt } from 'react-icons/fa'
+import {   FaEnvelope, FaFileAlt, FaHome } from 'react-icons/fa'
 import { FaCode } from 'react-icons/fa6'
 const NavBar = () => {
   return (

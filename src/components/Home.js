@@ -18,19 +18,17 @@ const Home = () => {
         <link rel="canonical" href="https://abelkoech.vercel.app/" />
       </Helmet>
         <NavBar />
-    <div className='home-container'> 
-    <div className='about'>
-      <div className='bio '>
-      <h2>Hello, I'm</h2>
+        <div className='row text-center' style={{marginTop:'100px'}}>
+          <div className='col-md-6'>
+          <h2>Hello, I'm</h2>
         <h3>Abel Koech</h3>
-        <h3> a <span className='span'>Front-end Developer</span></h3>
+        <h3> A <span className='span'>Front-end Developer</span></h3>
       </div>
-    <div className='home-img mb-3'>
-        <img src={homeimg} alt='potrait of Abel Koech'/>
-    </div>
-    </div>
-    
-    </div>
+      <div className='col-md-6'>
+      <img className='img-fluid mb-4' src={homeimg} alt='Abel Koech' style={{maxWidth:'450px'}}/>
+      </div>
+        
+        </div>
     <About/>
   
         

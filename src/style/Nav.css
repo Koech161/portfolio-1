@@ -13,7 +13,7 @@
     margin: 0;
     border-radius: 50%;
     transition: transform 0.3s ease;
-    animation: rotate 25s linear infinite;
+    animation: rotate 1000s linear infinite;
 }
 @keyframes rotate {
    from{

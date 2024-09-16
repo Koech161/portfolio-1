@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className='contact-container'>
     <NavBar />
-    <div className='contact' >
+    <div className='contact justify-content-center' style={{marginTop:'100px'}}>
        
         <h2>Contact Me</h2>
         <div className='contact-item'>

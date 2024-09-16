@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='footer-content'>
       <div className='footer-item'>
           <FaPhone />
-          <p> +254 748512459</p>
+          <p> (+254) 748512459</p>
         </div>
         <div className='footer-item'>
           <FaMapMarkerAlt/>

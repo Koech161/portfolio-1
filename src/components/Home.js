@@ -21,7 +21,7 @@ const Home = () => {
         <link rel="canonical" href="https://abelkoech.vercel.app/" />
       </Helmet>
         <NavBar />
-        <div className='row text-center' style={{marginTop:'120px'}}>
+        <div className='container my-6 row text-center justify-content-center' style={{marginTop:'150px'}}>
           <div className='col-md-6'>
           <h2>Hello, I'm</h2>
         <h3>Abel Koech</h3>

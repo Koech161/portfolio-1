@@ -35,7 +35,7 @@
     color: #111111;
   }
   .card:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 .card h3{
     font-size: 2em;

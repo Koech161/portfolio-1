@@ -6,7 +6,8 @@ import dashboard from '../assets/dashboard.jpeg'
 import doc from '../assets/Screenshot from 2024-09-16 22-10-24.png'
 import recipe from '../assets/Screenshot from 2024-09-16 15-39-59.png'
 import collection from '../assets/Screenshot from 2024-09-16 21-58-58.png'
-// import '../style/Projects.css'
+import dictionary from '../assets/Screenshot from 2024-09-18 01-24-05.png'
+import advice from '../assets/Screenshot from 2024-09-18 01-12-14.png'
 
 const Projects = () => {
   const projects = [
@@ -61,7 +62,27 @@ const Projects = () => {
                     Features include sales analytics, product management, and customer administration.`,
       githubLink: 'https://github.com/koech161/Admin-dashboard',
       liveLink: 'https://admindasboard.vercel.app'
-    }
+    
+  },
+  {
+    title: 'Qoutes generator',
+    imgSrc: advice,
+    altText: 'E-commerce Admin Dashboard',
+    description: `An admin dashboard for managing e-commerce operations.
+                  Features include sales analytics, product management, and customer administration.`,
+    githubLink: 'https://github.com/koech161/Admin-dashboard',
+    liveLink: 'https://admindasboard.vercel.app'
+  },
+  {
+    title: 'English Dictionary',
+    imgSrc: dictionary,
+    altText: 'E-commerce Admin Dashboard',
+    description: `An admin dashboard for managing e-commerce operations.
+                  Features include sales analytics, product management, and customer administration.`,
+    githubLink: 'https://github.com/koech161/Admin-dashboard',
+    liveLink: 'https://admindasboard.vercel.app'
+  }
+
   ]
   return (
 <div>

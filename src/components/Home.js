@@ -28,7 +28,7 @@ const Home = () => {
         <h3> A <span className='span'>Front-end Developer</span></h3>
       </div>
       <div className='col-md-6'>
-      <img className='img-fluid  img ' src={homeimg} alt=' Potrait of Abel Koech' style={{maxWidth:'450px'}}/>
+      <img className='img-fluid  img ' src={homeimg} alt=' Potrait of Abel Koech' />
       </div>
         
         </div>

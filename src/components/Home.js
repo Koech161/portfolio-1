@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
 
-    <div className='home'>
+    <div >
         <Helmet>
         <title>Home - Abel Koech</title>
         <meta name="description" content="Welcome to the portfolio of Abel Koech, a Front-end Developer." />
@@ -21,6 +21,7 @@ const Home = () => {
         <link rel="canonical" href="https://abelkoech.vercel.app/" />
       </Helmet>
         <NavBar />
+        <div className='home'>
         <div className='container my-6 row text-center justify-content-center' style={{marginTop:'150px'}}>
           <div className='col-md-6'>
           <h2>Hello, I'm</h2>
@@ -30,7 +31,7 @@ const Home = () => {
       <div className='col-md-6'>
       <img className='img-fluid  img ' src={homeimg} alt=' Potrait of Abel Koech' />
       </div>
-        
+        </div>
         </div>
     <About/>
     <Resume />

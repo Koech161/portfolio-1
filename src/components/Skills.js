@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Projects.css'
+// import '../style/Projects.css'
 import { FaBootstrap,  FaBug,  FaCode,  FaCss3Alt, FaDatabase, FaGit, FaHtml5, FaJs, FaLinux, FaMobileAlt, FaProjectDiagram, FaQuestionCircle, FaReact, FaTerminal } from 'react-icons/fa';
 const Skills = () => {
     const skills =['HTML 5', 'CSS 3','JavaScript','React', 'Bootstrap','Projects Managements',
@@ -24,21 +24,24 @@ const Skills = () => {
 
       };
   return (
-    <div className='skill'>
-      {
-        skills.length > 0 && (
-            <>
-            {skills.map((skill,index)=>(
-                <div className='skill-card card' key={index}>
-                    
-                    <span className='skill-name  ' >{skillIcons[skill] || <FaQuestionCircle/>} {skill}</span>
-                </div>
-                
-            ))}
-            </>
-        )
-      }
-    </div>
+    <div className='container my-5'>
+            <h2 className='text-center mb-4'>My Skills</h2>
+            <div className='row'>
+                {skills.map((skill, index) => (
+                    <div className='col-md-2 justify-content-center  d-flex flex-wrap' key={index} style={{width:'150px'}}>
+                        <div className='card text-center  col-md mb-4' >
+                            <div className='card-body'>
+                                <div className='mb-3'>
+                                    {skillIcons[skill] || <FaQuestionCircle size={24} />}
+                                </div>
+                                <h5 className='card-title'>{skill}</h5>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+  
   )
 }
 

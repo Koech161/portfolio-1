@@ -25,7 +25,7 @@ const Home = () => {
           <div className='col-md-6'>
           <h2>Hello, I'm</h2>
         <h3>Abel Koech</h3>
-        <h3> A <span className='span'>Front-end Developer</span></h3>
+        <h3> A <span className='span'>Full Stack Developer</span></h3>
       </div>
       <div className='col-md-6'>
       <img className='img-fluid  img ' src={homeimg} alt=' Potrait of Abel Koech' />

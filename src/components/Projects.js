@@ -60,29 +60,26 @@ const Projects = () => {
       altText: 'E-commerce Admin Dashboard',
       description: `An admin dashboard for managing e-commerce operations.
                     Features include sales analytics, product management, and customer administration.`,
-      githubLink: 'https://github.com/koech161/Admin-dashboard',
+      githubLink: 'https://github.com/Koech161/E-commerce-Dashboard',
       liveLink: 'https://admindasboard.vercel.app'
     
   },
   {
-    title: 'Qoutes generator',
+    title: 'Quotes Generator',
     imgSrc: advice,
-    altText: 'E-commerce Admin Dashboard',
-    description: `An admin dashboard for managing e-commerce operations.
-                  Features include sales analytics, product management, and customer administration.`,
-    githubLink: 'https://github.com/koech161/Admin-dashboard',
-    liveLink: 'https://admindasboard.vercel.app'
+    altText: 'Quotes Generator',
+    description: `Generates random quotes for inspiration and motivation.`,
+    githubLink: 'https://github.com/koech161/Advice-App',
+    liveLink: 'https://koech161.github.io/Advice-App/'
   },
   {
     title: 'English Dictionary',
     imgSrc: dictionary,
-    altText: 'E-commerce Admin Dashboard',
-    description: `An admin dashboard for managing e-commerce operations.
-                  Features include sales analytics, product management, and customer administration.`,
-    githubLink: 'https://github.com/koech161/Admin-dashboard',
-    liveLink: 'https://admindasboard.vercel.app'
+    altText: 'English Dictionary',
+    description: `A comprehensive dictionary application for looking up word definitions and meanings.`,
+    githubLink: 'https://github.com/koech161/dictionary',
+    liveLink: 'https://koech161.github.io/dictionary/'
   }
-
   ]
   return (
 <div>

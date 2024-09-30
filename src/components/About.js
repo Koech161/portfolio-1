@@ -1,94 +1,30 @@
-import React from 'react'
-import '../App.css'
-
+import React from 'react';
+import '../App.css';
 
 const About = () => {
   return (
-    <div className="container mt-5" id='about' >
-    <h1 className="text-center mb-4">About Me</h1>
-    <h2 className="text-center mb-4">Crafting Digital Experiences: My Story</h2>
-    <div className="row">
-      <div className="col-md-6 mb-4">
-        <div className="card p-3">
-          <div className="card-body">
-            <p className="card-text">
-              I am a passionate web developer dedicated to crafting exceptional digital
-              experiences on the internet. With a blend of technical expertise and creative flair,
-              I design and build websites and web applications that are
-              not only functional but also user-friendly and visually compelling.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-6 mb-4">
-        <div className="card p-3">
-          <div className="card-body">
-            <p className="card-text">
-              I possess a strong proficiency in core programming languages such as 
-              HTML, CSS, and JavaScript. My expertise extends to using the React framework,
-              which enhances my development process and 
-              allows me to create dynamic, efficient, and scalable applications.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-6 mb-4">
-        <div className="card p-3">
-          <div className="card-body">
-            <p className="card-text">
-              Driven by a commitment to excellence, I strive to combine innovative design 
-              with robust functionality. My goal is to deliver web solutions that not only 
-              meet but exceed user expectations, ensuring an engaging and seamless experience.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-6 mb-4">
-        <div className="card p-3">
-          <div className="card-body">
-            <p className="card-text">
-              Whether I'm working on a complex web application or a simple landing page,
-              I bring a keen eye for detail and a dedication to best practices. I'm always eager
-              to embrace new challenges and stay current with the latest industry trends to continually
-              improve my craft.
-            </p>
+    <div className="container mt-5" id='about'>
+      <h1 className="text-center mb-4">About Me</h1>
+      <h2 className="text-center mb-4">Crafting Digital Experiences: My Story</h2>
+      <div className="row justify-content-center">
+        <div className="col-md-8 mb-4">
+          <div className="card p-3">
+            <div className="card-body">
+              <p className="card-text">
+                I am a Full Stack Developer with a passion for creating seamless digital experiences. With proficiency in <strong>JavaScript</strong> and <strong>Python</strong>, I leverage my skills to build dynamic web applications that are both functional and user-friendly. My expertise spans various frameworks, including <strong>React</strong> for front-end development and <strong>Flask</strong> for back-end solutions.
+              </p>
+              <p className="card-text">
+                I am well-versed in essential web technologies such as <strong>HTML5</strong>, <strong>CSS</strong>, and <strong>Bootstrap</strong>, enabling me to create responsive and visually appealing designs. I am committed to delivering high-quality web solutions that not only meet user needs but also exceed expectations. My skills in <strong>SQL</strong> and tools like <strong>Git</strong>, <strong>npm</strong>, and <strong>Postman</strong> allow me to efficiently manage databases and collaborate effectively with teams.
+              </p>
+              <p className="card-text">
+                With strong soft skills in <strong>teamwork</strong>, <strong>communication</strong>, and <strong>problem-solving</strong>, I thrive in collaborative environments. I am always eager to embrace new challenges and stay updated with industry trends to continuously improve my craft.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-    // <div className='about-container container mt-5'>
-    //   <h1 className='about_me_head text-center m4-4'>About Me</h1>
-    //     <h1 className='about-title text-center'>Crafting Digital Experiences: My Story</h1>
-    //   <div className='des  '>
-    //  <div className='card'>
-    // <p>I am a passionate web developer dedicated to crafting exceptional digital
-    //    experiences on the internet. With a blend of technical expertise and creative flair,
-    //     I design and build websites and web applications that are
-    //    not only functional but also user-friendly and visually compelling.</p>
-    //  </div>
-    //  <div className='card'>
-    // <p>I possess a strong proficiency in core programming languages such as 
-    //   HTML, CSS, and JavaScript. My expertise extends to using the React framework,
-    //    which enhances my development process and 
-    //   allows me to create dynamic, efficient, and scalable applications.</p>
-    //  </div>
-    //  <div className='card'>
-    // <p>Driven by a commitment to excellence, I strive to combine innovative design 
-    //   with robust functionality. My goal is to deliver web solutions that not only 
-    //   meet but exceed user expectations, ensuring an engaging and seamless experience.</p>
-    //  </div>
-    //  <div className='card'>
-    // <p>Whether I'm working on a complex web application or a simple landing page,
-    //    I bring a keen eye for detail and a dedication to best practices. I'm always eager
-    //     to embrace new challenges and stay current with the latest industry trends to continually
-    //      improve my craft.</p>
-    //  </div>
-
-    // </div>
-    
-    // </div>
-  )
+  );
 }
 
-export default About
+export default About;

@@ -10,7 +10,7 @@ import './style/Footer.css'
 function App() {
   return (
     <div className='App'>
-      {/* <NavBar /> */}
+    
       <div className='content'>
     
       <RouterProvider router={routes}/>

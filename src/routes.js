@@ -1,30 +1,42 @@
+import { lazy, Suspense } from "react"
 import { createBrowserRouter } from "react-router-dom"
-import Home from "./components/Home"
-import About from "./components/About"
-import Resume from "./components/Resume"
-import Projects from "./components/Projects"
-import Contact from "./components/Contact"
-
+// import Home from "./components/Home"
+// import Resume from "./components/Resume"
+// import Projects from "./components/Projects"
+// import Contact from "./components/Contact"
+const Home = lazy(() => import('./components/Home'))
+const Resume = lazy(() => import('./components/Resume'))
+const Projects = lazy(() => import('./components/Projects'))
+const Contact = lazy(()=> import('./components/Contact'))
 const routes = createBrowserRouter([
     {
         path: '/',
-        element: <Home />
+        element:(<Suspense fallback={<div>Loading...</div>}>
+             <Home />
+             </Suspense> 
+        ),
     },
-    // {
-    //     path: '/about',
-    //     element: <About />
-    // },
+    
     {
         path: '/resume',
-        element: <Resume />
+        element:  (<Suspense fallback={<div>Loading...</div>}>
+            <Resume />
+            </Suspense> 
+       ),
     },
     {
         path: '/projects',
-        element: <Projects />
+        element: (<Suspense fallback={<div>Loading...</div>}>
+            <Projects />
+            </Suspense> 
+       ),
     },
     {
         path: '/contact',
-        element: <Contact />
+        element: (<Suspense fallback={<div>Loading...</div>}>
+            <Contact />
+            </Suspense> 
+       ),
     },
 ])
 export default routes

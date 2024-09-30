@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='footer-content'>
       <div className='footer-item'>
           <FaPhone />
-          <p> +254 748512459</p>
+          <p> (+254) 748512459</p>
         </div>
         <div className='footer-item'>
           <FaMapMarkerAlt/>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
 
     </div>
-    <p className='copyrights'>  &copy; 2024 Abel. All rights reserved.</p>
+    <p className='copyrights'>  &copy; 2024 Abel Koech. All rights reserved.</p>
     </footer>
    
     

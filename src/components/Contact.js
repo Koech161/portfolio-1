@@ -10,11 +10,13 @@ const Contact = () => {
     <div className='contact-container'>
     <NavBar />
     <div className='contact justify-content-center row ' style={{marginTop:'130px'}}>
+    <h2 className='text-center'>Contact Me</h2>
     <div className='col-md-6'>
       <img className='img-fluid' src= {contact} alt=''/>
     </div>
-        <h2>Contact Me</h2>
-        <div className='contact-item col-md'>
+    <div className='col-md' style={{marginLeft: '50px'}}>
+        
+        <div className='contact-item c' >
           <FaLinkedin  size={24} color="#0077B5" />
           <p><a href='https://www.linkedin.com/in/abel-koech-787193280/' target='_blank' rel='noopener noreferrer'>LinkedIn</a></p>
         </div>
@@ -29,7 +31,7 @@ const Contact = () => {
       
       
     </div>
-    
+    </div>
   
     </div>
   )

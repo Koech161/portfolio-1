@@ -1,3 +1,49 @@
+// import homeimg from '../assets/my_pic.jpg'
+// import '../App.css'
+// import NavBar from './NavBar'
+// import About from './About'
+// import { Helmet } from 'react-helmet'
+// import Resume from './Resume'
+// import Projects from './Projects'
+// import Contact from './Contact'
+
+// const Home = () => {
+
+//   return (
+
+//     <div className='home'>
+//         <Helmet>
+//         <title>Home - Abel Koech</title>
+//         <meta name="description" content="Welcome to the portfolio of Abel Koech, a Front-end Developer." />
+//         <meta name="keywords" content="Abel Koech, Front-end Developer, Web Developer, Portfolio" />
+//         <meta name="author" content="Abel Koech" />
+//         <meta name="copyright" content="© 2024 Abel Koech" />
+//         <link rel="canonical" href="https://abelkoech.vercel.app/" />
+//       </Helmet>
+//         <NavBar />
+//         <div className='container my-6 row text-center justify-content-center' style={{marginTop:'150px'}}>
+//           <div className='col-md-6'>
+//           <h2>Hello, I'm</h2>
+//         <h3>Abel Koech</h3>
+//         <h3> A <span className='span'>Full Stack Developer</span></h3>
+//       </div>
+//       <div className='col-md-6'>
+//       <img className='img-fluid  img ' src={homeimg} alt=' Potrait of Abel Koech' />
+//       </div>
+        
+//         </div>
+//     <About/>
+//     <Resume />
+//     <Projects />
+//     <Contact />    
+//     </div>
+//   )
+// }
+
+// export default Home
+
+
+import React from 'react'
 import homeimg from '../assets/my_pic.jpg'
 import '../App.css'
 import NavBar from './NavBar'
@@ -10,9 +56,8 @@ import Contact from './Contact'
 const Home = () => {
 
   return (
-
-    <div className='home'>
-        <Helmet>
+    <div className="home">
+      <Helmet>
         <title>Home - Abel Koech</title>
         <meta name="description" content="Welcome to the portfolio of Abel Koech, a Front-end Developer." />
         <meta name="keywords" content="Abel Koech, Front-end Developer, Web Developer, Portfolio" />
@@ -20,22 +65,35 @@ const Home = () => {
         <meta name="copyright" content="© 2024 Abel Koech" />
         <link rel="canonical" href="https://abelkoech.vercel.app/" />
       </Helmet>
-        <NavBar />
-        <div className='container my-6 row text-center justify-content-center' style={{marginTop:'150px'}}>
-          <div className='col-md-6'>
+
+      {/* Navbar */}
+      <NavBar />
+
+      {/* Hero Section */}
+      <div className="container my-6 row text-center justify-content-center" style={{ marginTop: '100px' }}>
+        <div className="col-md-6 d-flex flex-column justify-content-center">
           <h2>Hello, I'm</h2>
-        <h3>Abel Koech</h3>
-        <h3> A <span className='span'>Full Stack Developer</span></h3>
-      </div>
-      <div className='col-md-6'>
-      <img className='img-fluid  img ' src={homeimg} alt=' Potrait of Abel Koech' />
-      </div>
-        
+          <h3>Abel Koech</h3>
+          <h3>
+            A <span className="text-danger">Full Stack Developer</span>
+          </h3>
         </div>
-    <About/>
-    <Resume />
-    <Projects />
-    <Contact />    
+        <div className="col-md-6 d-flex justify-content-center align-items-center">
+          <img className="img-fluid rounded" src={homeimg} alt="Portrait of Abel Koech" />
+        </div>
+      </div>
+
+      {/* About Section */}
+      <About />
+
+      {/* Resume Section */}
+      <Resume />
+
+      {/* Projects Section */}
+      <Projects />
+
+      {/* Contact Section */}
+      <Contact />
     </div>
   )
 }

@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import { FaEnvelopeOpenText, FaGithub, FaLinkedin } from 'react-icons/fa'
 import NavBar from './NavBar'
@@ -8,18 +6,6 @@ import contact from '../assets/contact _pic.svg'
 
 const Contact = () => {
   return (
-    <div className='contact-container'>
-    <NavBar />
-    <div className='contact justify-content-center row ' style={{marginTop:'130px'}}>
-    <h2 className='text-center'>Contact Me</h2>
-    <div className='col-md-6'>
-      <img className='img-fluid' src= {contact} alt=''/>
-    </div>
-    <div className='col-md' style={{marginLeft: '50px'}}>
-        
-        <div className='contact-item c' >
-          <FaLinkedin  size={24} color="#0077B5" />
-          <p><a href='https://www.linkedin.com/in/abel-koech-787193280/' target='_blank' rel='noopener noreferrer'>LinkedIn</a></p>
     <div className="contact-container">
       <NavBar />
       <div className="container my-6 row justify-content-center" style={{ marginTop: '130px' }}>

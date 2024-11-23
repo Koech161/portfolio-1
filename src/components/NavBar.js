@@ -70,7 +70,6 @@ const NavBar = () => {
   });
 
   const mobileMenuStyle = {
-    display: 'flex',
     flexDirection: 'column',
     gap: '20px',
     position: 'absolute',

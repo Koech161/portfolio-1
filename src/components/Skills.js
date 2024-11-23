@@ -5,9 +5,6 @@ import {
     FaProjectDiagram, FaPython, FaReact, FaTerminal 
 } from 'react-icons/fa';
 
-import { Grid, Card, CardContent, Box, LinearProgress } from '@mui/material';
-import Typography from '@mui/material/Typography';
-
 const Skills = () => {
     const skills = {
         backend: [
@@ -44,102 +41,76 @@ const Skills = () => {
     };
 
     return (
-        <Box sx={{ my: 5 }}>
-           
+        <section className="py-5" id="skills">
+            <div className="container">
+                {/* Backend Skills Section */}
+                <div className="mb-5">
+                    <h2 className="text-center mb-3">Backend Skills</h2>
+                    <div className="progress mb-4" style={{ height: '10px' }}>
+                        <div className="progress-bar bg-primary" role="progressbar" style={{ width: '96%' }} aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                        {skills.backend.map((skill, index) => (
+                            <div className="col" key={index}>
+                                <div className="card text-center shadow-sm">
+                                    <div className="card-body">
+                                        <div className="mb-3">
+                                            {skillIcons[skill]}
+                                        </div>
+                                        <h5 className="card-title">{skill}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
 
-            {/* Backend Skills Section */}
-            <Box sx={{ mb: 4 }}>
-                <Typography variant="h5" align="center" gutterBottom>
-                    Backend Skills
-                </Typography>
-                <LinearProgress variant="determinate" value={96} sx={{ mb: 3 }} color="secondary" />
-                <Grid container spacing={4} justifyContent="center">
-                    {skills.backend.map((skill, index) => (
-                        <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                            <Card 
-                                sx={{ 
-                                    display: 'flex', 
-                                    flexDirection: 'column', 
-                                    alignItems: 'center', 
-                                    padding: 2, 
-                                    '&:hover': { transform: 'scale(1.05)', boxShadow: 4 } 
-                                }}
-                            >
-                                <CardContent>
-                                    <Box mb={2}>
-                                        {skillIcons[skill]}
-                                    </Box>
-                                    <Typography variant="h6">{skill}</Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Box>
+                {/* Frontend Skills Section */}
+                <div className="mb-5">
+                    <h2 className="text-center mb-3">Frontend Skills</h2>
+                    <div className="progress mb-4" style={{ height: '10px' }}>
+                        <div className="progress-bar bg-info" role="progressbar" style={{ width: '88%' }} aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                        {skills.frontend.map((skill, index) => (
+                            <div className="col" key={index}>
+                                <div className="card text-center shadow-sm">
+                                    <div className="card-body">
+                                        <div className="mb-3">
+                                            {skillIcons[skill]}
+                                        </div>
+                                        <h5 className="card-title">{skill}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
 
-            {/* Frontend Skills Section */}
-            <Box sx={{ mb: 4 }}>
-                <Typography variant="h5" align="center" gutterBottom>
-                    Frontend Skills
-                </Typography>
-                <LinearProgress variant="determinate" value={88} sx={{ mb: 3 }} color="primary" />
-                <Grid container spacing={4} justifyContent="center">
-                    {skills.frontend.map((skill, index) => (
-                        <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                            <Card 
-                                sx={{ 
-                                    display: 'flex', 
-                                    flexDirection: 'column', 
-                                    alignItems: 'center', 
-                                    padding: 2, 
-                                    '&:hover': { transform: 'scale(1.05)', boxShadow: 4 } 
-                                }}
-                            >
-                                <CardContent>
-                                    <Box mb={2}>
-                                        {skillIcons[skill]}
-                                    </Box>
-                                    <Typography variant="h6">{skill}</Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Box>
-
-            {/* Database Skills Section */}
-            <Box sx={{ mb: 4 }}>
-                <Typography variant="h5" align="center" gutterBottom>
-                    Database Skills
-                </Typography>
-                <LinearProgress variant="determinate" value={90} sx={{ mb: 3 }} color="success" />
-                <Grid container spacing={4} justifyContent="center">
-                    {skills.database.map((skill, index) => (
-                        <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                            <Card 
-                                sx={{ 
-                                    display: 'flex', 
-                                    flexDirection: 'column', 
-                                    alignItems: 'center', 
-                                    padding: 2, 
-                                    '&:hover': { transform: 'scale(1.05)', boxShadow: 4 } 
-                                }}
-                            >
-                                <CardContent>
-                                    <Box mb={2}>
-                                        {skillIcons[skill]}
-                                    </Box>
-                                    <Typography variant="h6">{skill}</Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Box>
-        </Box>
+                {/* Database Skills Section */}
+                <div className="mb-5">
+                    <h2 className="text-center mb-3">Database Skills</h2>
+                    <div className="progress mb-4" style={{ height: '10px' }}>
+                        <div className="progress-bar bg-success" role="progressbar" style={{ width: '90%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                        {skills.database.map((skill, index) => (
+                            <div className="col" key={index}>
+                                <div className="card text-center shadow-sm">
+                                    <div className="card-body">
+                                        <div className="mb-3">
+                                            {skillIcons[skill]}
+                                        </div>
+                                        <h5 className="card-title">{skill}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 };
 
 export default Skills;
-
-                   

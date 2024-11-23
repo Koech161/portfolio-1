@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <div className='footer-item'>
           <FaLinkedin   size={24} color="#0077B5"/>
-          <p><a href='https://www.linkedin.com/in/abel-koech-787193280/' target='_blank' rel='noopener noreferrer'>LinkedIn</a></p>
+          <p><a href='https://www.linkedin.com/in/abelkoech/' target='_blank' rel='noopener noreferrer'>LinkedIn</a></p>
         </div>
         <div className='footer-item'>
           <FaGithub size={24} color="#333"/>

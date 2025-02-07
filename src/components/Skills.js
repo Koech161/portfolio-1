@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import React from 'react';
 import { 
     FaBootstrap, FaBug, FaCode, FaCss3Alt, FaDatabase, 
@@ -45,7 +46,8 @@ const Skills = () => {
             <div className="container">
                 {/* Backend Skills Section */}
                 <div className="mb-5">
-                    <h2 className="text-center mb-3">Backend Skills</h2>
+                    {/* <h1 className="text-center mb-3">Backend Skills</h2> */}
+                    
                     <div className="progress mb-4" style={{ height: '10px' }}>
                         <div className="progress-bar bg-primary" role="progressbar" style={{ width: '96%' }} aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>

@@ -43,7 +43,7 @@
 // export default Home
 
 
-import React from 'react'
+import React, {useEffect} from 'react'
 import homeimg from '../assets/my_pic.jpg'
 import '../App.css'
 import NavBar from './NavBar'
@@ -55,16 +55,31 @@ import Contact from './Contact'
 
 const Home = () => {
 
+  const newWebsitr = 'https://abelk-k.vercel.app'
+  useEffect(() => {
+    window.location.href = newWebsitr
+  })
+
   return (
     <div className="home">
       <Helmet>
-        <title>Home - Abel Koech</title>
-        <meta name="description" content="Welcome to the portfolio of Abel Koech, a Front-end Developer." />
-        <meta name="keywords" content="Abel Koech, Front-end Developer, Web Developer, Portfolio" />
-        <meta name="author" content="Abel Koech" />
-        <meta name="copyright" content="© 2024 Abel Koech" />
-        <link rel="canonical" href="https://abelkoech.vercel.app/" />
-      </Helmet>
+  <title>Abel Koech - Full Stack Developer Portfolio</title>
+  <meta name="description" content="Explore the portfolio of Abel Koech, a skilled Full Stack Developer specializing in modern web development technologies. View projects, resume, and contact information." />
+  <meta name="keywords" content="Abel Koech, Full Stack Developer, Web Developer, React Developer, Portfolio, JavaScript, Next.js, Frontend, Backend" />
+  <meta name="author" content="Abel Koech" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Abel Koech - Full Stack Developer Portfolio" />
+  <meta property="og:description" content="Discover the work of Abel Koech, a Full Stack Developer proficient in React, Next.js, and Django. Check out projects and get in touch." />
+  <meta property="og:image" content="https://abelkoech.vercel.app/assets/my_pic.jpg" />
+  <meta property="og:url" content="https://abelkoech.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abel Koech - Full Stack Developer Portfolio" />
+  <meta name="twitter:description" content="Browse through Abel Koech’s portfolio showcasing modern web development projects and expertise." />
+  <meta name="twitter:image" content="https://abelkoech.vercel.app/assets/my_pic.jpg" />
+  <link rel="canonical" href="https://abelkoech.vercel.app/" />
+</Helmet>
+
 
       {/* Navbar */}
       <NavBar />

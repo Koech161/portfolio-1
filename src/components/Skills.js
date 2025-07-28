@@ -1,4 +1,5 @@
-import { Typography } from '@mui/material';
+import { Stack, Step, Stepper, Typography } from '@mui/material';
+import StepIndicator from '@mui/joy/StepIndicator';
 import React from 'react';
 import { 
     FaBootstrap, FaBug, FaCode, FaCss3Alt, FaDatabase, 
@@ -42,77 +43,88 @@ const Skills = () => {
     };
 
     return (
-        <section className="py-5" id="skills">
-            <div className="container">
-                {/* Backend Skills Section */}
-                <div className="mb-5">
-                    {/* <h1 className="text-center mb-3">Backend Skills</h2> */}
-                    
-                    <div className="progress mb-4" style={{ height: '10px' }}>
-                        <div className="progress-bar bg-primary" role="progressbar" style={{ width: '96%' }} aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
-                        {skills.backend.map((skill, index) => (
-                            <div className="col" key={index}>
-                                <div className="card text-center shadow-sm">
-                                    <div className="card-body">
-                                        <div className="mb-3">
-                                            {skillIcons[skill]}
-                                        </div>
-                                        <h5 className="card-title">{skill}</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+        // <section className="py-5" id="skills">
+        //     <div className="container">
+        //         {/* Backend Skills Section */}
+        //         <div className="mb-5">
+        //             {/* <h1 className="text-center mb-3">Backend Skills</h2> */}
+                     
+        //             <div className="progress mb-4" style={{ height: '10px' }}>
+        //                 <div className="progress-bar bg-primary" role="progressbar" style={{ width: '96%' }} aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+        //             </div>
+        //             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+        //                 {skills.backend.map((skill, index) => (
+        //                     <div className="col" key={index}>
+        //                         <div className="card text-center shadow-sm">
+        //                             <div className="card-body">
+        //                                 <div className="mb-3">
+        //                                     {skillIcons[skill]}
+        //                                 </div>
+        //                                 <h5 className="card-title">{skill}</h5>
+        //                             </div>
+        //                         </div>
+        //                     </div>
+        //                 ))}
+        //             </div>
+        //         </div>
 
-                {/* Frontend Skills Section */}
-                <div className="mb-5">
-                    <h2 className="text-center mb-3">Frontend Skills</h2>
-                    <div className="progress mb-4" style={{ height: '10px' }}>
-                        <div className="progress-bar bg-info" role="progressbar" style={{ width: '88%' }} aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
-                        {skills.frontend.map((skill, index) => (
-                            <div className="col" key={index}>
-                                <div className="card text-center shadow-sm">
-                                    <div className="card-body">
-                                        <div className="mb-3">
-                                            {skillIcons[skill]}
-                                        </div>
-                                        <h5 className="card-title">{skill}</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+        //         {/* Frontend Skills Section */}
+        //         <div className="mb-5">
+        //             <h2 className="text-center mb-3">Frontend Skills</h2>
+        //             <div className="progress mb-4" style={{ height: '10px' }}>
+        //                 <div className="progress-bar bg-info" role="progressbar" style={{ width: '88%' }} aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+        //             </div>
+        //             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+        //                 {skills.frontend.map((skill, index) => (
+        //                     <div className="col" key={index}>
+        //                         <div className="card text-center shadow-sm">
+        //                             <div className="card-body">
+        //                                 <div className="mb-3">
+        //                                     {skillIcons[skill]}
+        //                                 </div>
+        //                                 <h5 className="card-title">{skill}</h5>
+        //                             </div>
+        //                         </div>
+        //                     </div>
+        //                 ))}
+        //             </div>
+        //         </div>
 
-                {/* Database Skills Section */}
-                <div className="mb-5">
-                    <h2 className="text-center mb-3">Database Skills</h2>
-                    <div className="progress mb-4" style={{ height: '10px' }}>
-                        <div className="progress-bar bg-success" role="progressbar" style={{ width: '90%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
-                        {skills.database.map((skill, index) => (
-                            <div className="col" key={index}>
-                                <div className="card text-center shadow-sm">
-                                    <div className="card-body">
-                                        <div className="mb-3">
-                                            {skillIcons[skill]}
-                                        </div>
-                                        <h5 className="card-title">{skill}</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+        //         {/* Database Skills Section */}
+        //         <div className="mb-5">
+        //             <h2 className="text-center mb-3">Database Skills</h2>
+        //             <div className="progress mb-4" style={{ height: '10px' }}>
+        //                 <div className="progress-bar bg-success" role="progressbar" style={{ width: '90%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+        //             </div>
+        //             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+        //                 {skills.database.map((skill, index) => (
+        //                     <div className="col" key={index}>
+        //                         <div className="card text-center shadow-sm">
+        //                             <div className="card-body">
+        //                                 <div className="mb-3">
+        //                                     {skillIcons[skill]}
+        //                                 </div>
+        //                                 <h5 className="card-title">{skill}</h5>
+        //                             </div>
+        //                         </div>
+        //                     </div>
+        //                 ))}
+        //             </div>
+        //         </div>
+        //     </div>
+        // </section>
+        <>
+        <Typography textAlign={'center'} > Backend Skills</Typography>
+        <Stack alignItems={'vertical'} justifyContent={'center'}>
+            <Stepper  sx={{ rowGap:'3'}}>
+                {skills.backend.map((skill, index) => (
+                     <Step sx={{ column:'2'}} key={index} indicator={<StepIndicator>{skillIcons[skill]}</StepIndicator>} >{skill}</Step>
+                ))}
+               
+            </Stepper>
+        </Stack>
+        </>
+    );  
 };
 
 export default Skills;

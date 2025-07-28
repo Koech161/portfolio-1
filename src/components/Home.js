@@ -55,9 +55,9 @@ import Contact from './Contact'
 
 const Home = () => {
 
-  const newWebsitr = 'https://abelk-k.vercel.app'
+  const newWebsite = 'https://abelk-k.vercel.app'
   useEffect(() => {
-    window.location.href = newWebsitr
+    window.location.href = newWebsite
   },[])
 
   return (

@@ -58,7 +58,7 @@ const Home = () => {
   const newWebsitr = 'https://abelk-k.vercel.app'
   useEffect(() => {
     window.location.href = newWebsitr
-  })
+  },[])
 
   return (
     <div className="home">
